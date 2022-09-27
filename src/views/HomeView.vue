@@ -1,21 +1,14 @@
 <template>
   <main>
-    <section class="py-5 text-center container">
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light text-uppercase">Welcome to SwitchDock</h1>
-        </div>
-      </div>
-    </section>
-    <div class="album py-5 bg-light">
+    <div class="album py-3 bg-light">
       <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 G-3">
           <transition-group name="benefits" appear>
             <div
               v-for="(item, index) in benefits"
               :key="item"
               id="item-list"
-              class="col-3 d-flex"
+              class="d-flex"
             >
               <div class="card shadow-sm">
                 <div class="bg-danger text-light px-3">
