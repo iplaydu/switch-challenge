@@ -6,18 +6,20 @@
           <transition-group name="benefits" appear>
             <div
               v-for="(item, index) in benefits"
-              :key="item"
+              :key="index"
               id="item-list"
               class="d-flex"
             >
-              <div class="card shadow-sm">
+              <div class="card shadow-sm m-1">
                 <div class="bg-danger text-light px-3">
-                  <h4>
+                  <strong>
                     {{ item.title }}
-                  </h4>
+                  </strong>
                 </div>
                 <div class="card-body">
-                  <p class="card-text">{{ index }}: {{ item.description }}</p>
+                  <p class="card-text">
+                    <small>{{ item.description }}</small>
+                  </p>
                 </div>
               </div>
             </div>

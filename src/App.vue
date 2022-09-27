@@ -35,13 +35,7 @@
     </div>
   </footer>
 </template>
-<script>
-export default {};
-</script>
 <style lang="css">
-@import "bootstrap/dist/css/bootstrap.min.css";
-@import "bootstrap";
-
 .benefits-enter-active,
 .benefits-leave-active {
   transition: all 0.5s ease-in-out;
