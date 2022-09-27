@@ -4,7 +4,9 @@
       <p class="float-right">
         <a class="text-secondary" href="#">Back to top</a>
       </p>
-      <p class="text-secondary">SWITCHDOCK &copy; 2022</p>
+      <p class="text-secondary">
+        SWITCHDOCK &copy; {{ new Date().getFullYear() }}
+      </p>
     </div>
   </footer>
 </template>
