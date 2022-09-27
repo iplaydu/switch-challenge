@@ -10,23 +10,25 @@
     <div class="album py-5 bg-light">
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <div
-            v-for="(item, index) in benefits"
-            :key="item.id"
-            id="item-list"
-            class="col-3 d-flex"
-          >
-            <div class="card shadow-sm">
-              <div class="bg-danger text-light px-3">
-                <h4>
-                  {{ item.title }}
-                </h4>
-              </div>
-              <div class="card-body">
-                <p class="card-text">{{ index }}: {{ item.description }}</p>
+          <transition-group name="benefits" appear>
+            <div
+              v-for="(item, index) in benefits"
+              :key="item"
+              id="item-list"
+              class="col-3 d-flex"
+            >
+              <div class="card shadow-sm">
+                <div class="bg-danger text-light px-3">
+                  <h4>
+                    {{ item.title }}
+                  </h4>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">{{ index }}: {{ item.description }}</p>
+                </div>
               </div>
             </div>
-          </div>
+          </transition-group>
         </div>
       </div>
     </div>
@@ -43,11 +45,15 @@ export default {
   // created() {
   //   fetch("/benefits.json")
   //     .then((response) => response.json())
-  //     .then((data) => {
-  //       this.benefits = data;
-  //     });
+  //     .then(
+  //       (json) => {
+  //         this.levels = json;
+  //       },
+  //       (response) => {
+  //         console.log("Error loading json:", response);
+  //       }
+  //     );
   // },
-
   data() {
     return {
       benefits: [

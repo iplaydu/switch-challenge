@@ -14,19 +14,13 @@
     <div class="navbar-collapse collapse justify-content-stretch" id="navbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <router-link to="/benefits" class="nav-link text-light"
-            >Benefits</router-link
-          >
+          <router-link to="#" class="nav-link text-light">Benefits</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/safety" class="nav-link text-light"
-            >Safety</router-link
-          >
+          <router-link to="#" class="nav-link text-light">Safety</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/policies" class="nav-link text-light"
-            >Policies</router-link
-          >
+          <router-link to="#" class="nav-link text-light">Policies</router-link>
         </li>
       </ul>
     </div>
@@ -46,8 +40,9 @@
 <script>
 export default {};
 </script>
-<style lang="scss">
-//@import "node_modules/bootstrap/scss/bootstrap.scss";
+<style lang="css">
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap";
 
 .benefits-enter-active,
 .benefits-leave-active {
