@@ -11,14 +11,14 @@
               class="d-flex"
             >
               <div class="card shadow-sm m-1">
-                <div class="bg-danger text-light px-3">
+                <div class="bg-danger small text-light px-3">
                   <strong>
                     {{ item.title }}
                   </strong>
                 </div>
                 <div class="card-body">
-                  <p class="card-text">
-                    <small>{{ item.description }}</small>
+                  <p class="card-text small text-secondary">
+                    {{ item.description }}
                   </p>
                 </div>
               </div>
