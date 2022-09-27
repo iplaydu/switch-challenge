@@ -21,12 +21,12 @@ export default {
 
 .benefits-enter-from {
   opacity: 0;
-  transform: translateX(300px);
+  transform: translateY(300px);
 }
 
 .benefits-leave-to {
   opacity: 0;
-  transform: translateX(-300px);
+  transform: translateY(-300px);
 }
 
 .nav-link:visited,
