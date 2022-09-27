@@ -11,7 +11,7 @@
               class="d-flex"
             >
               <div class="card shadow-sm m-1">
-                <div class="bg-danger small text-light px-3">
+                <div class="bg-danger small text-light px-3 text-truncate">
                   <strong>
                     {{ item.title }}
                   </strong>
