@@ -1,5 +1,4 @@
-{
-	"benefits": [
+	[
 		{
 			"title": "PPO Plan",
 			"description": "Switch provides you two medical plan options of comprehensive coverage for you and your family at very affordable rates. The PPO plan design allows you to access any doctor at any time.  You do not need to obtain a referral to see a specialist. Using an In-Network provider through the United HealthCare CHOICE PLUS Network will provide you the highest level of benefits."
@@ -85,4 +84,3 @@
 			"description": "Switch provides various beverage options for employees. Ordering drinks with your meal should rarely be necessary."
 		}
 	]
-}
